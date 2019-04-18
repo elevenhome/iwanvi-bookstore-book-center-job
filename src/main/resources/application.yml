@@ -1,0 +1,27 @@
+#Actuator 的健康检查
+#http://localhost:8083/actuator/health
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  server:
+#    port: 8083
+    servlet:
+      context-path: /
+    ssl:
+      enabled: false
+  endpoint:
+    health:
+      show-details: always
+##项目信息
+info:
+  app:
+    name: "@project.artifactId@"
+    encoding: '@project.build.sourceEncoding@'
+    java:
+      source: '@java.version@'
+      target: '@java.version@'
+
+
+

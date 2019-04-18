@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: bookstore-book-center-job
+  cloud:
+    config:
+      profile: ${spring_cloud_config_profile}
+      label: ${spring_cloud_config_label}
+      uri: ${spring_cloud_config_uri}
+      username: ${spring_cloud_config_username}
+      password: ${spring_cloud_config_password}
